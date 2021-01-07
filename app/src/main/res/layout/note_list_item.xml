@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    android:layout_margin="8dp"
+    android:background="@drawable/note_background">
+
+    <LinearLayout
+        android:id="@+id/note_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/note_background">
+
+        <TextView
+            android:id="@+id/note_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="title"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/note_item_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="body"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
